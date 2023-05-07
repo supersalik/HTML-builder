@@ -4,7 +4,7 @@ const path = require("path");
 const pastFolder = path.resolve(__dirname, "files-copy");
 const dataFolder = path.resolve(__dirname, "files");
 
-fs.rm(pastFolder, { recursive: true }, (err) => {
+fs.rm(pastFolder, { recursive: true, force: true }, (err) => {
   if (err) {
     console.error(err);
   }

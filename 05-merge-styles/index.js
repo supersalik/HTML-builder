@@ -36,8 +36,6 @@ writeFileA(path.resolve(__dirname, "project-dist", "bundle.css"), "")
       files.forEach((file) => {
         const fileName = file.name.split(".");
         const fileExtention = fileName[fileName.length - 1];
-        // console.log(file.name);
-        // const filePath = path.join(folderStyles, file.name);
 
         if (fileExtention === "css") {
           const filePath = path.join(folderStyles, file.name);
