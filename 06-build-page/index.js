@@ -50,7 +50,7 @@ const styleFilecreator = async () => {
       }
     }
   } catch (err) {
-    console.log("1", err.message);
+    console.log(err.message);
   }
 };
 
