@@ -44,3 +44,8 @@ writeFileA(path.resolve(__dirname, "text.txt"), "")
   )
 
   .catch((err) => console.log(err.message));
+
+process.on("SIGINT", function () {
+  console.log("You used CTRL+C for exit");
+  process.exit();
+});
